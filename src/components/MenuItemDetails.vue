@@ -10,7 +10,7 @@ const details = ref(false);
 </script>
 
 <template>
-  <div class="row inline">
+  <div class="q-pa-md row items-start q-gutter-md">
     <div class="col-3">
       <q-card>
         <q-img :src="foodItem.src" @click="details = !details"></q-img>

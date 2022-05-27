@@ -13,7 +13,6 @@ const lunchMenu = MenuList.slice(8, 12);
     v-for="item in lunchMenu"
     :foodItem="item"
     :key="item.id"
-    :src="item.src"
   ></menu-item-details-vue>
   <footer-bar-vue></footer-bar-vue>
 </template>

@@ -11,8 +11,8 @@ const snackMenu = MenuList.slice(MenuList.length - 1);
   <nav-bar-vue></nav-bar-vue>
   <menu-item-details-vue
     v-for="item in snackMenu"
+    :foodItem="item"
     :key="item.id"
-    :src="item.src"
   ></menu-item-details-vue>
   <footer-bar-vue></footer-bar-vue>
 </template>

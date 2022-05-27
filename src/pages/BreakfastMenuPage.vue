@@ -13,7 +13,6 @@ const breakFastMenu = MenuList.slice(0, 8);
     v-for="item in breakFastMenu"
     :foodItem="item"
     :key="item.id"
-    :src="item.src"
   ></menu-item-details-vue>
   <footer-bar-vue></footer-bar-vue>
 </template>
