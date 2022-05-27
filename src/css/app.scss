@@ -1,0 +1,30 @@
+// app global css in SCSS form
+@font-face {
+  font-family: 'Imperial Script';
+  src: url(./fonts/ImperialScript-Regular.ttf);
+}
+
+.imperial-script {
+  font-family: 'Imperial Script';
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  src: url(./fonts/InriaSerif-Regular.ttf);
+}
+
+.inria-serif {
+  font-family: 'Inria Serif';
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/Inter-VariableFont_slntwght.ttf)
+}
+
+.inter {
+  font-family: 'Inter';
+}
+
