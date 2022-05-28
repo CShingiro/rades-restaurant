@@ -21,7 +21,7 @@ import FooterBarVue from 'src/layouts/FooterBar.vue';
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </q-card-section>
-              <q-card-section class="mobile-hide">
+              <q-card-section class="gt-xs">
                 <h4 class="inria-serif text-italic">Address:</h4>
                 <div class="text-h5 inria-serif text-italic">
                   301 King Street East<br />
