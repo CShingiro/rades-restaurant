@@ -1,18 +1,27 @@
 <script setup lang="ts">
 import NavBarVue from 'src/layouts/NavBar.vue';
-import FooterBarVue from 'src/layouts/FooterBar.vue';
 import MenuItemDetailsVue from 'src/components/MenuItemDetails.vue';
 import { MenuList } from 'app/menu';
+import FooterBarVue from 'src/layouts/FooterBar.vue';
 
 const snackMenu = MenuList.slice(MenuList.length - 1);
 </script>
 
 <template>
-  <nav-bar-vue></nav-bar-vue>
-  <menu-item-details-vue
-    v-for="item in snackMenu"
-    :foodItem="item"
-    :key="item.id"
-  ></menu-item-details-vue>
-  <footer-bar-vue></footer-bar-vue>
+  <q-layout view="hHh lpR fFf">
+    <nav-bar-vue></nav-bar-vue>
+    <q-page-container>
+      <q-page>
+        <h3 class="imperial-script text-center">Snack</h3>
+        <menu-item-details-vue
+          v-for="item in snackMenu"
+          :foodItem="item"
+          :key="item.id"
+        ></menu-item-details-vue>
+      </q-page>
+    </q-page-container>
+    <q-footer elevated class="bg-white">
+      <footer-bar-vue></footer-bar-vue>
+    </q-footer>
+  </q-layout>
 </template>

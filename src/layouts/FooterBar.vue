@@ -1,23 +1,22 @@
 <script setup lang="ts"></script>
 
 <template>
-  <q-footer>
-    <div class="row inline">
-      <div class="col">
-        <q-icon name="bi-facebook"></q-icon>
-      </div>
-      <div class="col">
-        <q-icon name="bi-instagram"></q-icon>
-      </div>
-      <div class="col">
-        <q-icon name="bi-twitter"></q-icon>
-      </div>
-      <div class="col">
-        <q-icon name="bi-copyright"></q-icon>
-        <h5 class="inria-serif">Rade's Restaurant</h5>
-      </div>
-    </div>
-  </q-footer>
+  <q-toolbar>
+    <q-btn href="https://www.facebook.com/Rades-Restaurant-108329781451386">
+      <q-icon name="facebook" color="brown-8"></q-icon>
+    </q-btn>
+    <q-btn>
+      <q-icon name="ion-logo-instagram" href="" color="brown-8"></q-icon>
+    </q-btn>
+    <q-btn>
+      <q-icon name="ion-logo-twitter" href="" color="brown-8"></q-icon>
+    </q-btn>
+    <q-space />
+    <q-btn>
+      <q-icon name="copyright" color="brown-8"></q-icon>
+      <h6 class="inria-serif text-brown-8">2022 - Rade's Restaurant</h6>
+    </q-btn>
+  </q-toolbar>
 </template>
 
 <style scoped></style>

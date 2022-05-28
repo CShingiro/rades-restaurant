@@ -1,4 +1,12 @@
 import { RouteRecordRaw } from 'vue-router';
+import HomePageVue from 'src/pages/HomePage.vue';
+import AboutPageVue from 'src/pages/AboutPage.vue';
+import ContactPageVue from 'src/pages/ContactPage.vue';
+import BreakfastMenuPage from 'src/pages/BreakfastMenuPage.vue';
+import LunchMenuPage from 'src/pages/LunchMenuPage.vue';
+import DinnerMenuPage from 'src/pages/DinnerMenuPage.vue';
+import SnackMenuPage from 'src/pages/SnackMenuPage.vue';
+
 
 const routes: RouteRecordRaw[] = [
   {
@@ -10,35 +18,31 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: '/home',
-    component: () => import('src/pages/HomePage.vue'),
-  },
-  {
-    path: '/menu',
-    component: () => import('src/pages/MenuPage.vue'),
+    component: HomePageVue,
   },
   {
     path: '/menu/breakfast',
-    component: () => import('src/pages/BreakfastMenuPage.vue'),
+    component: BreakfastMenuPage,
   },
   {
     path: '/menu/lunch',
-    component: () => import('src/pages/LunchMenuPage.vue'),
+    component: LunchMenuPage,
   },
   {
     path: '/menu/dinner',
-    component: () => import('src/pages/DinnerMenuPage.vue'),
+    component: DinnerMenuPage,
   },
   {
     path: '/menu/snacks',
-    component: () => import('src/pages/SnackMenuPage.vue'),
+    component: SnackMenuPage,
   },
   {
     path: '/about',
-    component: () => import('src/pages/AboutPage.vue'),
+    component: AboutPageVue,
   },
   {
     path: '/contact',
-    component: () => import('src/pages/ContactPage.vue'),
+    component: ContactPageVue,
   },
   // Always leave this as last one,
   // but you can also remove it
