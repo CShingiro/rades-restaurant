@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
-import FooterBarVue from 'src/layouts/FooterBar.vue'
+import FooterBarVue from 'src/layouts/FooterBar.vue';
 
-const drawerRightHome = ref(false)
+const drawerRightHome = ref(false);
 
 const tab = ref('');
 </script>
@@ -95,7 +95,9 @@ const tab = ref('');
   </q-img>
   <q-layout view="hHh lpR fFf" class="lt-sm">
     <q-header class="bg-white">
-      <q-toolbar class="bg-white text-white shadow-2 transparent rounded-borders imperial-script">
+      <q-toolbar
+        class="bg-white text-white shadow-2 transparent rounded-borders imperial-script"
+      >
         <router-link to="/home">
           <q-avatar size="70px">
             <img
@@ -105,9 +107,15 @@ const tab = ref('');
             />
           </q-avatar>
         </router-link>
-        <q-space>
-        </q-space>
-        <q-btn color="brown-8" flat @click="drawerRightHome = !drawerRightHome" round dense icon="menu" />
+        <q-space> </q-space>
+        <q-btn
+          color="brown-8"
+          flat
+          @click="drawerRightHome = !drawerRightHome"
+          round
+          dense
+          icon="menu"
+        />
       </q-toolbar>
     </q-header>
     <q-page-container>
@@ -122,7 +130,7 @@ const tab = ref('');
         >
           <q-scroll-area class="fit">
             <div class="q-pa-xs">
-              <q-btn no-caps to="/">Home</q-btn>
+              <q-btn no-caps to="/home">Home</q-btn>
               <q-btn no-caps to="/menu/breakfast">Breakfast</q-btn>
               <q-btn no-caps to="/menu/lunch">Lunch</q-btn>
               <q-btn no-caps to="/menu/dinner">Dinner</q-btn>
@@ -149,7 +157,6 @@ const tab = ref('');
       <footer-bar-vue></footer-bar-vue>
     </q-footer>
   </q-layout>
-
 </template>
 
 <style lang="sass" scoped></style>

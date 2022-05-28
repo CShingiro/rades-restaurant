@@ -9,10 +9,16 @@ import FooterBarVue from 'src/layouts/FooterBar.vue';
     <q-page-container>
       <q-page>
         <div class="row">
-          <div class="col absolute-center">
+          <div class="col">
             <q-card>
               <q-card-section>
-                <q-video src="https://youtu.be/nBRYO8Ys-6c"></q-video>
+                <q-video
+                  :ratio="16 / 9"
+                  title="About Video"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  src="/Videos/AboutVideo.mp4"
+                ></q-video>
               </q-card-section>
               <q-card-section>
                 <div class="text-h4 imperial-script text-center">
