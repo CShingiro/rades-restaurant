@@ -3,15 +3,15 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-  <h1 class="text-center imperial-script gt-xs">
+  <h3 class="text-center imperial-script gt-xs">
     Welcome to Rade's Restaurant
-  </h1>
+  </h3>
   <h3 class="text-center imperial-script lt-sm">
     Welcome to Rade's Restaurant
   </h3>
   <div class="row gt-xs">
-    <div class="col-3"></div>
-    <div class="col-6">
+    <div class="col-4"></div>
+    <div class="col-4">
       <router-link to="/home"
         ><q-img
           width="100%"
@@ -20,7 +20,7 @@ import { RouterLink } from 'vue-router';
         ></q-img
       ></router-link>
     </div>
-    <div class="col-3"></div>
+    <div class="col-4"></div>
   </div>
   <div class="row lt-sm">
     <div class="col">
