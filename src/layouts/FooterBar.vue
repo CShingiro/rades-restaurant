@@ -5,12 +5,8 @@
     <q-btn href="https://www.facebook.com/Rades-Restaurant-108329781451386">
       <q-icon name="facebook" color="brown-8"></q-icon>
     </q-btn>
-    <q-btn>
-      <q-icon
-        name="ion-logo-instagram"
-        href="https://www.instagram.com/rades.restaurant/"
-        color="brown-8"
-      ></q-icon>
+    <q-btn href="https://www.instagram.com/rades.restaurant">
+      <q-icon name="ion-logo-instagram" color="brown-8"></q-icon>
     </q-btn>
     <q-btn>
       <q-icon name="ion-logo-twitter" href="" color="brown-8"></q-icon>
