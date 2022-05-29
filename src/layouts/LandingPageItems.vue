@@ -12,8 +12,12 @@ import { RouterLink } from 'vue-router';
           width="100%"
           src="/Images/logo.png"
           alt="Rade's Restaurant Logo"
-        ></q-img
-      ></router-link>
+        >
+          <div class="absolute-bottom text-center imperial-script">
+            <h4>Enter Here</h4>
+          </div>
+        </q-img></router-link
+      >
     </div>
     <div class="col-4"></div>
   </div>
@@ -24,8 +28,12 @@ import { RouterLink } from 'vue-router';
           width="100%"
           src="/Images/logo.png"
           alt="Rade's Restaurant Logo"
-        ></q-img
-      ></router-link>
+        >
+          <div class="absolute-bottom text-center imperial-script">
+            Enter Here
+          </div>
+        </q-img></router-link
+      >
     </div>
   </div>
 </template>

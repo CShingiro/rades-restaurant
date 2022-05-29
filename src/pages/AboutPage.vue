@@ -28,7 +28,7 @@ import FooterBarVue from 'src/layouts/FooterBar.vue';
                   What Is Rade's Restaurant?
                 </div>
               </q-card-section>
-              <q-card-section class="gt-xs">
+              <q-card-section>
                 <p class="inria-serif text-center">
                   Rade's is the abbreviation of my kids' names and is a new
                   family run restaurant. We function in traditional
