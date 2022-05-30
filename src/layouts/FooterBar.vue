@@ -8,8 +8,8 @@
     <q-btn href="https://www.instagram.com/rades.restaurant">
       <q-icon name="ion-logo-instagram" color="brown-8"></q-icon>
     </q-btn>
-    <q-btn>
-      <q-icon name="ion-logo-twitter" href="" color="brown-8"></q-icon>
+    <q-btn href="https://twitter.com/radesrestaurant">
+      <q-icon name="ion-logo-twitter" color="brown-8"></q-icon>
     </q-btn>
     <q-space />
     <q-btn>
