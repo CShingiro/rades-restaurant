@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import NavBarVue from 'src/layouts/NavBar.vue';
 import MenuItemDetailsVue from 'src/components/MenuItemDetails.vue';
-import { MenuList } from 'app/menu';
+import { LunchMenuList } from 'app/menu';
 import FooterBarVue from 'src/layouts/FooterBar.vue';
 
-const lunchMenu = MenuList.slice(8, 11);
+const lunchMenu = LunchMenuList;
 </script>
 
 <template>
   <q-layout view="hHh lpR fFf">
-    <nav-bar-vue @drawer-right="drawerRight = !drawerRight"></nav-bar-vue>
+    <nav-bar-vue></nav-bar-vue>
     <q-page-container>
       <q-page>
         <h3 class="imperial-script text-center">Lunch</h3>

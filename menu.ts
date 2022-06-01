@@ -1,7 +1,7 @@
 import { FoodItem } from 'app/types';
 import { v4 as uuidv4 } from 'uuid';
 
-export const MenuList = [
+export const BreakFastMenuList = [
   {
     id: uuidv4(),
     name: 'Cheese Burger',
@@ -66,6 +66,36 @@ export const MenuList = [
       'Marinara, Garlic, Three Eggs, Black Pepper, Sea Salt, Chickpeas, Top Parsley, Sliced Bread (Chicken extra $4.00)(Salad/Rice/Fries extra $2.99)',
     src: 'Shukshuka.jpeg',
   },
+] as FoodItem[];
+
+export const LunchMenuList = [
+  {
+    id: uuidv4(),
+    name: 'Pizza Alfredo',
+    price: '$10.99',
+    description:
+      'Dough, Marinara Silsi, Mozzarella Cheese, Basil (Salad/Fries/Topping extra $2.99)',
+    src: 'PizzaAlfredo.jpeg',
+  },
+  {
+    id: uuidv4(),
+    name: 'Pizza Olive',
+    price: '$14.99',
+    description:
+      'Dough, Marinara, Mozzarella, Green Pepper, Black Olive, Mushroom, Red Onion (Salad/Fries/Topping extra $2.99 Poutine extra $5.99)',
+    src: 'PizzaOlive.jpeg',
+  },
+  {
+    id: uuidv4(),
+    name: 'Pizza Sweet Potatos',
+    price: '$14.99',
+    description:
+      'Dough, Marinara, Mozzarella, Sweet Potatos, Goat Cheese, Top Green Onion, (Salad/Fries/Topping extra $2.99 Poutine extra $5.99)',
+    src: 'PizzaSweetPotato.jpeg',
+  },
+] as FoodItem[];
+
+export const DinnerMenuList = [
   {
     id: uuidv4(),
     name: 'Pizza Alfredo',
@@ -130,6 +160,9 @@ export const MenuList = [
       'Our best vegetable combination. Red Lintels, Yellow Spolt, Collard Green, Cabbage, a combination of Peas, Lentil Sauce, Enjera and Salad',
     src: 'VegiHabesha.jpeg',
   },
+] as FoodItem[];
+
+export const SnackMenuList = [
   {
     id: uuidv4(),
     name: 'Dessert',

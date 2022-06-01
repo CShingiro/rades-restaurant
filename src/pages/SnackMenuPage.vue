@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import NavBarVue from 'src/layouts/NavBar.vue';
 import MenuItemDetailsVue from 'src/components/MenuItemDetails.vue';
-import { MenuList } from 'app/menu';
+import { SnackMenuList } from 'app/menu';
 import FooterBarVue from 'src/layouts/FooterBar.vue';
 
-const snackMenu = MenuList.slice(MenuList.length - 1);
+const snackMenu = SnackMenuList;
 </script>
 
 <template>

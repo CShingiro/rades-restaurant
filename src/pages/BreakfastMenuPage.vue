@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import NavBarVue from 'src/layouts/NavBar.vue';
 import MenuItemDetailsVue from 'src/components/MenuItemDetails.vue';
-import { MenuList } from 'app/menu';
+import { BreakFastMenuList } from 'app/menu';
 import FooterBarVue from 'src/layouts/FooterBar.vue';
 
-const breakFastMenu = MenuList.slice(0, 8);
+const breakFastMenu = BreakFastMenuList;
 </script>
 
 <template>
