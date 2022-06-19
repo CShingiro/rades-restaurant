@@ -17,7 +17,7 @@ import FooterBarVue from 'src/layouts/FooterBar.vue';
                   title="About Video"
                   loading="lazy"
                   referrerpolicy="no-referrer"
-                  src="/Videos/AboutVideo.mp4"
+                  src="https://www.youtube.com/embed/nBRYO8Ys-6c"
                 ></q-video>
               </q-card-section>
               <q-card-section>
