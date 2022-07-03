@@ -7,17 +7,24 @@ import { RouterLink } from 'vue-router';
   <div class="row gt-xs">
     <div class="col-4"></div>
     <div class="col-4">
-      <router-link to="/home"
-        ><q-img
-          width="100%"
-          src="/Images/logo.png"
-          alt="Rade's Restaurant Logo"
+      <router-link to="/home">
+        <transition-group
+          appear
+          enter-active-class="animated bounceInUp delay-3s slower"
+          leave-active-class="animated fadeOut"
         >
-          <div class="absolute-bottom text-center imperial-script">
-            <h4>Enter Here</h4>
-          </div>
-        </q-img></router-link
-      >
+          <q-img
+            key="image"
+            width="100%"
+            src="/Images/logo.png"
+            alt="Rade's Restaurant Logo"
+          >
+            <div key="box" class="absolute-bottom text-center imperial-script">
+              <h4 key="text">Enter Here</h4>
+            </div>
+          </q-img>
+        </transition-group>
+      </router-link>
     </div>
     <div class="col-4"></div>
   </div>
