@@ -30,17 +30,24 @@ import { RouterLink } from 'vue-router';
   </div>
   <div class="row lt-sm">
     <div class="col">
-      <router-link to="/home"
-        ><q-img
-          width="100%"
-          src="/Images/logo.png"
-          alt="Rade's Restaurant Logo"
+      <router-link to="/home">
+        <transition-group
+          appear
+          enter-active-class="animated bounceInUp delay-3s slower"
+          leave-active-class="animated fadeOut"
         >
-          <div class="absolute-bottom text-center imperial-script">
-            Enter Here
-          </div>
-        </q-img></router-link
-      >
+          <q-img
+            key="image"
+            width="100%"
+            src="/Images/logo.png"
+            alt="Rade's Restaurant Logo"
+          >
+            <div key="box" class="absolute-bottom text-center imperial-script">
+              Enter Here
+            </div>
+          </q-img>
+        </transition-group>
+      </router-link>
     </div>
   </div>
 </template>
